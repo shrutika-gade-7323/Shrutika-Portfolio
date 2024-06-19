@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
+import { GlobeDemo } from "./GridGlobe";
 
 export const BentoGrid = ({
   className,
@@ -42,7 +43,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
         className
       )}
       style={{
@@ -76,7 +77,7 @@ export const BentoGridItem = ({
         )}
         <div className={cn(
           titleClassName,
-          'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10'
+          'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-4 lg:p-10'
         )}>
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-s z-10">
             {description}
@@ -84,6 +85,30 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
+        
+          {id === 2 && <GlobeDemo/>}
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-2 lg:right-4">
+              <div className="flex flex-col gap-2 lg:gap-5">
+                {['React.js', 'Next.js', 'TypeScript'].map
+                ((item) => (
+                  <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                    {item}
+                  </span>
+                ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+              </div>
+              <div className="flex flex-col gap-2 lg:gap-5">
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+                {['Java', 'Python', 'C & C++'].map
+                ((item) => (
+                  <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
