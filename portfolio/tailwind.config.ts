@@ -10,8 +10,8 @@ const {
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
@@ -160,6 +160,14 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      gridColumn: {
+        'span-1.5': 'span 1.5 / span 1.5',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      gridColumn: ['responsive'],
     },
   },
   plugins: [
