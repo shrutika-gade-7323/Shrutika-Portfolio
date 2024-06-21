@@ -4,9 +4,9 @@ import { companies, testimonials } from '@/data'
 
 const WorkExperience = () => {
   return (
-    <div className='relative z-10 -mt-10' id='achievements'>
+    <div className='relative z-10 -mt-10 pb-20' id='achievements'>
       <h1 className='heading pb-10'>
-        <span className='text-purple'>My Milestones of Excellence</span>
+        <span className='text-purple'>My Work Experience</span>
       </h1>
       <div className='flex flex-col items-center max-lg:mt-10'>
         <InfiniteMovingCards
@@ -14,7 +14,7 @@ const WorkExperience = () => {
           direction='right'
           speed='slow'
         />
-        <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10'>
+        <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10 pt-10 pb-20'>
           {companies.map(({id, img, name, nameImg}) => (
             <div key={id} className='flex md:max-w-60 max-w-32 gap-2'>
               <img

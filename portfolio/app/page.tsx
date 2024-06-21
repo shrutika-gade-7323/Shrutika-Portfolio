@@ -1,3 +1,4 @@
+import Achievements from "@/components/Achievements";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -15,6 +16,7 @@ export default function Home() {
         <Grid/>
         <RecentProjects/>
         <WorkExperience/>
+        <Achievements/>
       </div>
     </main>
   );
