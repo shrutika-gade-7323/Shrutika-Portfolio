@@ -8,7 +8,7 @@ const Achievements = () => {
       <h1 className='heading pb-10'>
         <span className='text-purple'>Milestones</span><span className='text-white'> of </span><span className='text-purple'>Achievements</span>
       </h1>
-      <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
+      <div className='w-full mt-12 grid lg:grid-cols-6 grid-cols-1 gap-10'>
         {workExperience.map((card) => (
           <Button
             key={card.id}

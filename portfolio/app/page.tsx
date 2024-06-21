@@ -17,7 +17,6 @@ export default function Home() {
         <Hero/>
         <Grid/>
         <RecentProjects/>
-        <WorkExperience/>
         <Achievements/>
         <Education/>
         <Footer/>
