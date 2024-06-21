@@ -14,37 +14,43 @@ const Education = () => {
         <Card 
           title="STES's Sinhgad Spring Dale School, Pune" 
           icon={<AceternityIcon order="School"/>}
-          description="School Description"
+          description="Introduced to Fundamentals of Computing, HTML, and CSS"
+          year="June 2018 - March 2019"
+          percentage="10th Percentage: 91.80%"
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            animationSpeed={3}
+            containerClassName="bg-sky-600"
+            colors={[[125, 211, 252]]}
+            dotSize={2}
           />
         </Card>
         <Card 
           title="STES's Sou. Venutai Chavan Polytechnic, Pune" 
           icon={<AceternityIcon order="Diploma"/>}
-          description="Diploma Description"
+          description="Expanded Knowledge with JavaScript, Various Programming Languages, and Mobile App Development"
+          year="June 2019 - July 2022"
+          percentage="Diploma Percentage: 94.40%"
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
+            containerClassName="bg-sky-600"
+            colors={[[125, 211, 252]]}
             dotSize={2}
           />
         </Card>
         <Card 
           title="BRACT's Vishwakarma Institute of Technology, Pune" 
           icon={<AceternityIcon order="B. Tech"/>}
-          description="B. Tech Description"
+          description="Skilled in React.js and Next.js for Modern Web Development"
+          year="November 2022 - June 2025"
+          percentage="Current CGPA: 8.21"
         >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
             colors={[[125, 211, 252]]}
+            dotSize={2}
           />
         </Card>
       </div>
@@ -57,11 +63,15 @@ const Card = ({
   icon,
   children,
   description,
+  year,
+  percentage,
 }: {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
   description?: string;
+  year?: string;
+  percentage?: string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -96,6 +106,12 @@ const Card = ({
         </h2>
         <h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center" style={{color: '#e4ecff'}}>
           {description}
+        </h2>
+        <h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center underline" style={{color: '#e4ecff'}}>
+          {year}
+        </h2>
+        <h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center underline" style={{color: '#e4ecff'}}>
+          {percentage}
         </h2>
       </div>
     </div>
