@@ -8,17 +8,17 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "Aspiring Computer Engineering Student, Driven by Curiosity and Learning",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
+      titleClassName: "justify-end ml-2",
       img: "/b1.svg",
       spareImg: "",
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
+      title: "Open to New Connections and Conversations",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -38,7 +38,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "I'm Enthusiastic about Technology and Passionate about Development",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -49,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "I'm developing strong skills in Python, Java, C++, and web frameworks like React.js and Node.js",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,7 +59,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
+      title: "React Me Out via. Email! Let's Connect!",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -205,13 +205,21 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/shrutika-07"
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/link.svg",
+      link: "https://www.linkedin.com/in/shrutika-gade-860774226/",
     },
     {
       id: 3,
-      img: "/link.svg",
+      img: "/leetcode.svg",
+      link: "https://leetcode.com/u/shrutika-07/",
+    },
+    {
+      id: 4,
+      img: "/gfg.svg",
+      link: "https://auth.geeksforgeeks.org/user/shrutika_7323/practice",
     },
   ];
